@@ -1,25 +1,37 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html>
   <head>
-    <meta charset="UTF-8">
-    <title>QFRM boot camp by pbenson</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-dark.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <title>QFRM boot camp by pbenson</title>
   </head>
-  <body>
-    <section class="page-header">
-      <h1 class="project-name">QFRM boot camp</h1>
-      <h2 class="project-tagline"></h2>
-      <a href="https://github.com/pbenson/qfrm-bootcamp" class="btn">View on GitHub</a>
-      <a href="https://github.com/pbenson/qfrm-bootcamp/zipball/master" class="btn">Download .zip</a>
-      <a href="https://github.com/pbenson/qfrm-bootcamp/tarball/master" class="btn">Download .tar.gz</a>
-    </section>
 
-    <section class="main-content">
-      <p>Below is the agenda we follow to write and refine resumes, build a University web page and personal website, and learn some financial concepts while developing programming skills. Not necessarily in that order.</p>
+  <body>
+    <div id="container">
+      <div class="inner">
+
+        <header>
+          <h1>QFRM boot camp</h1>
+          <h2></h2>
+        </header>
+
+        <section id="downloads" class="clearfix">
+          <a href="https://github.com/pbenson/qfrm-bootcamp/zipball/master" id="download-zip" class="button"><span>Download .zip</span></a>
+          <a href="https://github.com/pbenson/qfrm-bootcamp/tarball/master" id="download-tar-gz" class="button"><span>Download .tar.gz</span></a>
+          <a href="https://github.com/pbenson/qfrm-bootcamp" id="view-on-github" class="button"><span>View on GitHub</span></a>
+        </section>
+
+        <hr>
+
+        <section id="main_content">
+          <p>Below is the agenda we follow to write and refine resumes, build a University web page and personal website, and learn some financial concepts while developing programming skills. Not necessarily in that order.</p>
 
 <h3>
 <a id="agenda" class="anchor" href="#agenda" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Agenda</h3>
@@ -46,6 +58,33 @@
         </ol>
     </li>
 
+    <li>Getting started with GitHub
+        <ol type="a">
+            <li>From GitHub Desktop, click on the '+' in the upper left to create a new repository, create a GitHub repository named <code>qfrm-python</code>. For Windows, I suggest using the Local Path 'C:\Users\yourUserName\Documents\GitHub\'.</li>
+            <li>Launch Atom (on Windows, you can launch it from GitHub Desktop via the icon in the upper right). Create a README.md file using Atom in your <code>qfrm-python</code> directory. Add this text to it: “These are programs I’ve written while learning Python. The implementation is in Jupyter notebooks." </li>
+            <li>In GitHub Desktop, refresh the Changes tab in your <code>qfrm-python</code> project, and Publish. Then commit your changes (set Summary to something like "initial commit"), and sync.
+            </li>
+            <li>Log in to <a href="https://github.com">GitHub</a> in your browser, and navigate to your <code>qfrm-python</code> repo. You should see your files listed, and your README.md file has been rendered as HTML.
+            </li>
+        </ol>
+    </li>
+    <li>Getting started with Jupyter and Python
+        <ol type="a">
+            <li>Jupyter runs Python in your browser, using a Jupyter Notebook. The Notebook requires a local server to be running, which you will start using a shell script. Notebooks support Markdown, and python code with full access to everything you got from Anaconda. We will start by downloading a stubbed notebook, <a href="https://github.com/pbenson/qfrm-bootcamp/blob/gh-pages/python-templates/python-basics-notebook.ipynb"><code>python-basics-notebook</code></a>. Click on the Raw button, then save as "python-basics-notebook.ipynb".</li>
+            <li>Launch Atom (on Windows, you can launch it from GitHub Desktop via the icon in the upper right). Create a README.md file using Atom in your <code>qfrm-python</code> directory. Add this text to it: “These are programs I’ve written while learning Python. The implementation is in Jupyter notebooks." </li>
+            <li>In GitHub Desktop, refresh the Changes tab in your <code>qfrm-python</code> project, and Publish. Then commit your changes (set Summary to something like "initial commit"), and sync.
+            </li>
+            <li>Log in to <a href="https://github.com">GitHub</a> in your browser, and navigate to your <code>qfrm-python</code> repo. You should see your files listed, and your README.md file has been rendered as HTML.
+            </li>
+            <li>Create a Jupyter notebook, and name it <code>python-basics-notebook</code>. We'll use it for the following...</li>
+            <li>simple data types: int, float, boolean, string</li>
+            <li>control structures: for loops, if/else</li>
+            <li>collection data types: lists, dictionaries</li>
+            <li>for loops with collections</li>
+            <li>functions</li>
+            <li>commit your work via GitHub Desktop, and sync.</li>
+        </ol>
+    </li>
     <li>Python Basics
         <ol type="a">
             <li>From GitHub Desktop, create a GitHub repository , and name it <code>python-basics-project</code>.</li>
@@ -98,15 +137,15 @@
         </ol>
     </li>
 </ol>
+        </section>
 
-      <footer class="site-footer">
-        <span class="site-footer-owner"><a href="https://github.com/pbenson/qfrm-bootcamp">QFRM boot camp</a> is maintained by <a href="https://github.com/pbenson">pbenson</a>.</span>
+        <footer>
+          QFRM boot camp is maintained by <a href="https://github.com/pbenson">pbenson</a><br>
+          This page was generated by <a href="https://pages.github.com">GitHub Pages</a>. Tactile theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.
+        </footer>
 
-        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
-      </footer>
-
-    </section>
-
-  
+        
+      </div>
+    </div>
   </body>
 </html>
